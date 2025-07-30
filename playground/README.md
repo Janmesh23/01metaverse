@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aim Trainer Game
+
+This is a simple aim trainer game built with [Next.js](https://nextjs.org) and [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction). The goal of the game is to click as many targets as possible within the time limit.
 
 ## Getting Started
 
@@ -6,28 +8,32 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Play
+
+- Move your mouse to aim.
+- Click on the targets to destroy them.
+- Try to destroy as many targets as you can before the time runs out.
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for building user interfaces.
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) - React renderer for Three.js.
+- [Three.js](https://threejs.org/) - 3D graphics library.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [React Three Fiber Documentation](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) - learn about React Three Fiber.
+- [Three.js Documentation](https://threejs.org/docs/) - learn about Three.js.
 
 ## Deploy on Vercel
 
