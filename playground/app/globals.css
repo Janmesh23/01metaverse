@@ -24,3 +24,49 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Starfield background */
+@keyframes move-stars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+.stars,
+.stars2,
+.stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAAAXNSR0IArs4c6QAAAB5JREFUeNrtwTEBAAAAwiD7p/ZZi+BEQAQEBAQEBAQEAoA2YgABXPpeXAAAAABJRU5ErkJggg==)
+    repeat top center;
+  z-index: 0;
+}
+
+.stars2 {
+  background: transparent
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAAAXNSR0IArs4c6QAAACBJREFUeNrtwTEBAAAAwiD7p/ZZi+BEQAQEBAQEBAQEAoA2YgABXPpeXAAAAABJRU5ErkJggg==)
+    repeat top center;
+  z-index: 1;
+  animation: move-stars 150s linear infinite;
+}
+
+.stars3 {
+  background: transparent
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAAAXNSR0IArs4c6QAAACBJREFUeNrtwTEBAAAAwiD7p/ZZi+BEQAQEBAQEBAQEAoA2YgABXPpeXAAAAABJRU5ErkJggg==)
+    repeat top center;
+  z-index: 2;
+  animation: move-stars 100s linear infinite;
+}
